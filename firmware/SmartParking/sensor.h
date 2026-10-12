@@ -1,3 +1,6 @@
+// ============================================================
+// sensors.h - Module đọc cảm biến hồng ngoại
+// ============================================================
 #ifndef SENSORS_H
 #define SENSORS_H
 
@@ -6,14 +9,12 @@
 
 class Sensors {
 public:
-    void init();
-    bool coXeVao();
-    bool coXeRa();
-    bool coXeTaiViTri(uint8_t viTri);
-    void capNhatDenBao();
+    void init();                          // Khởi tạo chân INPUT_PULLUP
+    bool coXeVao();                       // Đọc cảm biến cửa vào
+    bool coXeRa();                        // Đọc cảm biến cửa ra
+    bool coXeTaiViTri(uint8_t viTri);     // Đọc cảm biến vị trí (1-3)
+    void capNhatDenBao();                 // Cập nhật LED báo ô đỗ
 };
 
-// Khai báo biến toàn cục để file khác dùng được
 extern Sensors sensors;
-
 #endif
