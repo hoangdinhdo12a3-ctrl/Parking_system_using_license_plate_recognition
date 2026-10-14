@@ -1,0 +1,9 @@
+Tesseract-OCR/
+gtesseract-ocr-w64-setup*.exe
+.vscode/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.log
+bien.jpg
